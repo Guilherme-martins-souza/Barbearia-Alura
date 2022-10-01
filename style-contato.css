@@ -1,0 +1,77 @@
+main{
+	height: 100%;	/* colocado só para remover o valor declarado
+					pelo arquivo style-css */
+
+	width: 940px; /* define o tamanho horizontal do nosso main
+					no caso 940px é um bom valor quando queremos
+					centralizar um elemento */
+
+	margin: 40px auto; /* margin emcima e embaixo 0 e dos lados automatica
+					é utilizado em parceria com width 940 px para 
+					centralizar o elemento */
+}
+
+form {
+	margin: 40px 0; /* margin em cima e em baixo 40px e dos lados 0px*/
+}
+
+form label, form legend{
+	display: block; /* vai fazer com que os elementos fiquem um abaixo do 
+					outro*/
+	font-size: 20px;
+    margin: 0 0 10px; /* margim emcima e dos lados 0 e margim embaixo 10px */
+}
+
+.input-padrao{
+    display: block; /* vai fazer com que os elementos fiquem um abaixo do 
+				    outro*/
+    margin: 0 0 20px; /* adiciona uma margem de 20px embaixo */
+    padding: 10px 25px; /* aumenta o tamanho da caixa */
+    width: 50%; /*deixa os input com 50% do tamanho da pagina */
+}
+
+.checkbox{
+	margin: 20px 0 0 0;
+}
+
+.enviar {
+    width:40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+   	
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+@media (max-width: 480px) { /* Qualquer dispositivo com largura de tela inferior a 480 utilizará essas configurações*/
+	main{
+		width: 100%;
+		margin-left: 2%;
+	}
+
+}
